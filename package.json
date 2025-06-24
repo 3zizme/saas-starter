@@ -1,15 +1,16 @@
 {
   "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "db:setup": "npx tsx lib/db/setup.ts",
-    "db:seed": "npx tsx lib/db/seed.ts",
-    "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
-  },
+"scripts": {
+  "dev": "next dev --turbopack",
+  "build": "next build",
+  "start": "next start",
+  "db:setup": "npx tsx lib/db/setup.ts",
+  "db:seed": "npx tsx lib/db/seed.ts",
+  "db:generate": "drizzle-kit generate",
+  "db:migrate": "drizzle-kit migrate",
+  "db:studio": "drizzle-kit studio",
+  "drizzle:push": "pnpm db:setup"
+},
   "dependencies": {
     "@tailwindcss/postcss": "4.1.7",
     "@types/node": "^22.15.18",
